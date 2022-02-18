@@ -12,28 +12,23 @@ public class Frame extends JFrame{
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	private JPanel panel;
-	private JLabel cLabel;
-	private JButton[] buttons;
 	
 	public Frame() {
-		panel = new JPanel();
-		cLabel = new JLabel();
-		buttons = new JButton[16];
 		
 		setVisible(true);
 		setBounds(200, 200, 450, 500);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		panel.setBounds(getBounds());
-		cLabel.setText("Insert Number");
-		cLabel.setBounds(0, 0, 200, 200);
-		panel.add(cLabel);
-		add(panel);
 		setFocusable(true);
 	}
 	
 	public void paint(Graphics g) {
 		g.setColor(new Color(12, 12, 255));
-		g.drawRect(200, 200, 450, 500);
+		g.fillRect(0, 0, 450, 500);
+		
+		g.setColor(new Color(0, 0, 0));
+		g.fillRect(15, 40, 422, 200);
+		
+		g.setColor(new Color(255, 255, 255));
+		g.drawString("Insert Coin", 20, 15);
 	}
 }
