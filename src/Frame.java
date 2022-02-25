@@ -14,7 +14,7 @@ public class Frame extends JFrame{
 	
 	
 	public Frame() {
-		
+		//frame
 		setVisible(true);
 		setBounds(200, 200, 450, 500);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
